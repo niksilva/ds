@@ -1,0 +1,51 @@
+
+
+ion-content{
+  --background: url(../../assets/spiral.png);
+  --padding-start: 32px;
+  --padding-top: 32px;
+  --padding-end: 32px;
+  
+}
+h1{
+  font-weight: 700;
+  font-size: 28px;
+  color: white;
+  
+}
+h3{
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+}
+
+.icone{
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  ion-icon{
+    font-size: 40px;
+  }
+}
+ion-button{
+  position: absolute;
+  bottom: 32px;
+  width: calc(100% - 64px);
+}
+
+#resposta{
+  --width: fit-content;
+  --min-width: 50%;
+  --height: fit-content;
+  --border-radius: 12px;
+  text-align: center;
+  h2{
+    margin-bottom: 18px;
+  }
+}
+.coracao{
+margin-top: 110px;
+}
+ion-label{
+  
+}

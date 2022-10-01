@@ -1,0 +1,23 @@
+<ion-content>
+
+  <h1>Só Cafofo</h1>
+  <h3>Vamos ver se ele(a) goxxxxta?</h3>
+
+  <ion-item class="ion-no-padding">
+    <ion-label class="nome" position="floating">Primeiro nome</ion-label>
+    <ion-input [(ngModel)]="nome1" type="text"></ion-input>
+  </ion-item>
+  <div class="icone"><ion-icon name="add"></ion-icon></div>
+  <ion-item class="ion-no-padding">
+    <ion-label class="nome" position="floating">Segundo nome</ion-label>
+    <ion-input [(ngModel)]="nome2" type="text"></ion-input>
+  </ion-item>
+  <div class="coracao"> <img src="../../assets/coracao.png" alt=""></div>
+  <ion-button (click)="calcular()" id="open-resposta" expand="full" color="danger">Calcular</ion-button>
+
+  <ion-modal id="resposta" #modal trigger="open-resposta">
+    <ng-template>
+      <h2>{{porcentagem}}%</h2> 
+    </ng-template>
+  </ion-modal>
+</ion-content>
